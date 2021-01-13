@@ -1,3 +1,7 @@
+h1 {
+  text-align: center;
+}
+
 .body {
   font-family: "Roboto", sans-serif;
 }
@@ -43,7 +47,11 @@ h2 {
   font-size: 1rem;
 }
 
-.logoimg {
+.titlemenu {
+  background: #7A7A7B;
+}
+
+.title {
   width: 100%;
   text-decoration: none;
   color: black;
@@ -101,22 +109,8 @@ h2 {
   font-size: 1rem;
 }
 
-/* SECTION 1 ------------------------------------------------------- */
-#section1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 2rem;
-}
-
-.section1title {
+/*SECTION 1*/
+.titleoperation {
   font-size: 1.5rem;
   font-weight: 900;
   margin-top: 50px;
@@ -165,35 +159,26 @@ h2 {
   margin-left: 2rem;
 }
 
-/* SECTION 2 ------------------------------------------------------- */
+/*SECTION 2*/
+#section2 {
+  background-color: #F7F7F7;
+  padding-bottom: 1rem;
+}
+
+.titlerestaurants {
+  margin-left: 1rem;
+  font-size: 1.5rem;
+  font-weight: 900;
+  padding-top: 40px;
+  font-weight: 900;
+  font-family: "Roboto", sans-serif;
+}
+
 .picture_box_1 {
   border-radius: 1rem;
-  -webkit-box-shadow: 0 0 16px #0000002e;
-          box-shadow: 0 0 16px #0000002e;
-  width: 100%;
   text-decoration: none;
-}
-
-.picture_box_1 {
+  font-family: "Roboto", sans-serif;
   background: url("/images/restaurants/1.jpg");
-}
-
-.picture1 {
-  height: 180px;
-  background-size: cover;
-  background-position: center;
-  max-width: 100%;
-  width: 100%;
-  max-height: 100%;
-  border-radius: 1rem 1rem 0 0;
-  float: left;
-  margin-bottom: 1rem;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.picture1 :hover {
-  background-color: #f3f8ff;
 }
 
 .new {
@@ -206,58 +191,116 @@ h2 {
   padding-right: 10px;
   border-radius: 4px;
   position: absolute;
-  right: 10px;
-  margin-right: 1rem;
+  right: 2rem;
+}
+
+.picture1 {
+  height: 180px;
+  background-size: cover;
+  background-position: center;
+  max-height: 100%;
+  border-radius: 1rem 1rem 0 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-box-shadow: 0 0 16px #0000002e;
+          box-shadow: 0 0 16px #0000002e;
+}
+
+.picture1 :hover {
+  background-color: #f3f8ff;
 }
 
 .undertxt {
-  background-color: white;
-  font-weight: bold;
-  padding-left: 10px;
-  padding: 1rem;
-  border-radius: 20px;
   -webkit-box-shadow: 0 0 16px #0000002e;
           box-shadow: 0 0 16px #0000002e;
+  background-color: white;
+  font-weight: bold;
+  padding-bottom: 10px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  box-shadow: 0 0 16px #0000002e;
   color: black;
   margin-bottom: 2rem;
 }
 
-.undertxtsubtitle {
-  margin-bottom: -0.2rem;
-  margin-top: -0.2rem;
+.titlecard {
+  margin-top: 0px;
+  margin-left: 0.5rem;
+  padding-top: 10px;
+}
+
+.hearticon {
+  position: absolute;
+  right: 2rem;
 }
 
 .subtxt {
+  color: #757575;
   font-weight: normal;
+  margin-left: 0.5rem;
 }
 
-.footerbox {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  max-width: 100%;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  width: 1440px;
-  margin: auto;
-  background-color: gray;
-  padding: 1rem;
+/*SECTION 2 Media*/
+@media all and (max-width: 1920px) {
+  .picture1 {
+    width: 100%;
+  }
+  .undertxt {
+    width: 100%;
+  }
+  .section2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media all and (min-width: 600px) {
+  #section2 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .picture1 {
+    min-width: 150px;
+  }
+  .undertxt {
+    min-width: 150px;
+  }
+}
+
+/*Footer*/
+footer {
+  background: #363636;
+  color: white;
+  padding: 15px 0px 15px 0px;
+  min-width: 2px;
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+}
+
+.footertitle {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+  font-family: "Shrikhand", sans-serif;
+  margin-left: 1rem;
+}
+
+.footertxt {
+  margin-left: 1rem;
+}
+
+.footericon {
+  padding-right: 1rem;
+}
+
+.cardtitle {
+  padding-left: 1rem;
 }
 
 .footerlink {
   text-decoration: none;
   color: white;
-}
-
-.footersubtitle {
-  color: white;
-}
-
-h1 {
-  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
