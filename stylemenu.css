@@ -53,18 +53,27 @@ body {
 }
 
 .boxmenu {
-  width: 375px;
+  width: 100%;
   margin: auto;
   padding-bottom: 20px;
   border-radius: 60%;
   background-color: #F9F9F9;
 }
 
+.imgbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 img {
-  width: 375px;
-  margin: auto;
+  width: 100%;
+  max-width: 375px;
   background: white;
-  height: 350px;
+  height: 235px;
   -o-object-fit: cover;
      object-fit: cover;
   background-size: cover;
@@ -72,6 +81,11 @@ img {
 }
 
 .menutitle {
+  margin-left: 15px;
+  background-color: #F9F9F9;
+}
+
+.menutitlebox {
   border-radius: 0;
   margin-top: 0px;
   position: relative;
@@ -85,6 +99,7 @@ img {
   font-size: 1.1rem;
   margin-top: 8px;
   font-weight: bold;
+  background-color: #F9F9F9;
 }
 
 .platprice {
@@ -93,6 +108,7 @@ img {
 }
 
 .platbox {
+  width: 90%;
   background: white;
   margin-left: 15px;
   margin-right: 15px;
@@ -122,6 +138,7 @@ img {
   display: -ms-flexbox;
   display: flex;
   background: #f9f9f9;
+  width: 100%;
 }
 
 #heart0 {
@@ -146,6 +163,11 @@ img {
   border-radius: 30px;
   font-size: 1rem;
   background: linear-gradient(173deg, #ff79da 0%, #d66cdb 38%, #ab5edc 84%, #9b59dc 100%);
+  color: white;
+}
+
+.order {
+  color: white;
 }
 
 /* footer */
@@ -153,7 +175,7 @@ footer {
   background: #363636;
   color: white;
   padding: 15px 0px 15px 0px;
-  min-width: 375px;
+  min-width: 320px;
   font-family: "Roboto", sans-serif;
   text-decoration: none;
 }
@@ -182,5 +204,14 @@ footer {
 .footerlink {
   text-decoration: none;
   color: white;
+}
+
+.checkbox-input {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 1;
 }
 /*# sourceMappingURL=stylemenu.css.map */

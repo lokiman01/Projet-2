@@ -43,27 +43,33 @@ body {
 }
 .boxmenu 
 {
-  width: 375px;
+  width: 100%;
   margin: auto;
   padding-bottom: 20px;
   border-radius: 60%;
   background-color: #F9F9F9;
   
 }
-
-
-img {
-width: 375px;
-margin: auto;
-background: white;
-height: 350px;
-object-fit: cover;
-background-size: cover;
-background-position: center;
+.imgbox{
+    display: flex;
+    justify-content: center;
 }
 
+img {
+    width: 100%;
+    max-width: 375px;
+    background: white;
+    height: 235px;
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+}
+.menutitle{
+    margin-left: 15px;
+    background-color: #F9F9F9;
+}
 
-.menutitle 
+.menutitlebox 
 {
 border-radius: 0;
 margin-top: 0px;
@@ -71,18 +77,20 @@ position: relative;
 background: white;
 font-size: 1.7rem;
 font-family: "Shrikhand";
-    margin: 30px auto;
+margin: 30px auto;
 }
 .platbox .plattitle {
     font-size: 1.1rem;
     margin-top: 8px;
     font-weight: bold;
+    background-color: #F9F9F9;
 }
 .platprice{
     position: absolute;
     right: 1rem;
 }
 .platbox {
+  width: 90%;
   background: white;
   margin-left: 15px;
   margin-right: 15px;
@@ -104,6 +112,7 @@ font-family: "Shrikhand";
 .buttonorderbox {
   display: flex;
   background: #f9f9f9;
+  width: 100%;
 }
 
 #heart0 {
@@ -127,15 +136,19 @@ font-family: "Shrikhand";
   border-radius: 30px;
   font-size: 1rem;
   background: linear-gradient(173deg, #ff79da 0%, #d66cdb 38%, #ab5edc 84%, #9b59dc 100%);
+  color: white;
 }
-
+.order
+{
+    color: white;
+}
 /* footer */
 
 footer {
     background: #363636;
     color: white;
     padding: 15px 0px 15px 0px;
-    min-width: 375px;
+    min-width: 320px;
     font-family: "Roboto", sans-serif;
     text-decoration: none;
 }
@@ -161,4 +174,14 @@ footer {
 .footerlink{
     text-decoration: none;
     color: white;
+}
+
+
+.checkbox-input{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 1;
 }
